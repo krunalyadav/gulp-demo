@@ -1,5 +1,5 @@
 * {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 .btn,
@@ -21,20 +21,20 @@ select {
   text-shadow: none !important;
 }
 form * {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
 }
 input,
 textarea {
   background-image: none !important;
   border: 1px solid #ccc !important;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
 }
 select {
   font-size: 13px !important;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
 }
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   margin: 0 0 0 !important;
   margin-right: 5px !important;
   line-height: 23px !important;
@@ -42,11 +42,11 @@ input[type="checkbox"] {
 }
 .btn {
   background-image: none !important;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
   font-size: 13px !important;
 }
 .btn.btn-form-md {
-  margin: 0 .5em .2em .5em;
+  margin: 0 0.5em 0.2em 0.5em;
   width: 9em;
 }
 .btn.btn-mini {
@@ -1059,7 +1059,7 @@ form label {
   cursor: pointer;
 }
 body {
-  background-color: #FFF;
+  background-color: #fff;
 }
 .navbar-inverse {
   background-color: #333;
@@ -1150,7 +1150,7 @@ textarea.form-control {
   margin-right: 0;
 }
 .btn-group {
-  margin: .2em;
+  margin: 0.2em;
 }
 small {
   font-size: 14px;
@@ -1162,7 +1162,7 @@ small {
   color: white;
 }
 .page-title {
-  color: #EEE;
+  color: #eee;
   margin-right: 12px;
 }
 .right {
@@ -1183,7 +1183,7 @@ small {
   width: 110px;
   height: 120px;
   border-bottom: solid 0 transparent;
-  padding: 1.5% .5%;
+  padding: 1.5% 0.5%;
 }
 .name-stack h5 {
   text-align: center;
@@ -1195,12 +1195,12 @@ small {
   margin: 2px auto 8px auto !important;
 }
 .fa-search {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .form-search {
   min-height: 2em;
 }
-.input-group[class*="col-"] {
+.input-group[class*='col-'] {
   width: 80%;
   margin: 0 1.5em;
 }
@@ -1228,7 +1228,7 @@ small {
 }
 .navbar .brand-title {
   /*margin-left: 4em;*/
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .navbar-logo img {
   height: 20px;
@@ -1252,7 +1252,7 @@ small {
   width: 100%;
   height: 100%;
   background-color: #333;
-  opacity: .9;
+  opacity: 0.9;
   pointer-events: auto;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1263,13 +1263,13 @@ small {
   text-align: center;
   margin: 20% auto 0 auto;
   font-size: 400%;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-shadow: 2px 2px #000000;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   text-decoration: none;
-  color: #F58A00;
+  color: #f58a00;
   padding: 0;
 }
 .page-splash-message.page-splash-message-subtle {
@@ -1283,10 +1283,10 @@ small {
 .fa-asterisk.fa-asterisk-large {
   font-size: 180%;
   vertical-align: middle;
-  color: #F58A00;
+  color: #f58a00;
 }
 .fa-asterisk.fa-asterisk-alert {
-  color: #F58A00;
+  color: #f58a00;
 }
 .fa-asterisk-inline {
   padding: 0 4px 0 0;
@@ -1321,13 +1321,13 @@ small {
 .page-spinner-message {
   text-align: center;
   font-size: 400%;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-shadow: 2px 2px #000000;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
   text-decoration: none;
-  color: #F58A00;
+  color: #f58a00;
   padding: 0;
 }
 .page-spinner-message.page-spinner-message-subtle {
@@ -1520,7 +1520,7 @@ a {
 }
 @media (max-width: 320px) {
   .today-datas li {
-    padding: 1em .5em;
+    padding: 1em 0.5em;
     line-height: 1em;
   }
   .today-datas li i {
@@ -1530,7 +1530,7 @@ a {
     font-size: 1em;
   }
   .btn {
-    margin: .2em;
+    margin: 0.2em;
     width: 7em;
   }
   .btn-group > .btn {
@@ -1538,7 +1538,7 @@ a {
     width: 7em;
   }
   .btn-group.pull-right {
-    margin: .2em 0;
+    margin: 0.2em 0;
   }
   input,
   select {
@@ -1552,7 +1552,7 @@ a {
   }
   .user .user-details {
     margin-left: 7em;
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
   h3 {
     font-size: 1.5em !important;

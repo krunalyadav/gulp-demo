@@ -25,6 +25,8 @@ module.exports = function() {
 
         server: server,
 
+        browserReloadDelay: 1000,
+
         defaultPort: 7203,
         nodeServer: './src/server/app.js'
     };
