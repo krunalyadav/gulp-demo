@@ -5,6 +5,10 @@ var config = require('./gulp.config')();
 var del = require('del');
 var port = process.env.PORT || config.defaultPort;
 
+gulp.task('help', $.taskListing);
+
+gulp.task('default', ['help']);
+
 gulp.task('vet', function() {
     log('Analyzing source with JSHint and JSCS');
 
@@ -24,6 +28,12 @@ gulp.task('styles', function() {
         .pipe($.less())
         .pipe($.autoprefixer({ browsers: ['last 2 version', '> 5%'] }))
         .pipe(gulp.dest(config.temp));
+});
+
+gulp.task('fonts', function() {
+    log('Copying fonts...');
+
+    return gulp.src(config.fonts).pipe(gulp.dest(config.build + 'fonts'));
 });
 
 gulp.task('clean-styles', function(done) {

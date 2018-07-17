@@ -10,13 +10,14 @@ module.exports = function() {
         less: client + '/styles/styles.less',
         client: client,
         index: client + 'index.html',
+        build: './build/',
         css: temp + 'styles.css',
         js: [
             clientApp + '**/*.module.js',
             clientApp + '**/*.js',
             '!' + clientApp + '**/*.spec.js'
         ],
-
+        fonts: './bower_components/font-awesome/fonts/**/*.*',
         bower: {
             json: require('./bower.json'),
             directory: './bower_components',
