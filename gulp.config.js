@@ -18,6 +18,7 @@ module.exports = function() {
             '!' + clientApp + '**/*.spec.js'
         ],
         fonts: './bower_components/font-awesome/fonts/**/*.*',
+        images: client + 'images/**/*.*',
         bower: {
             json: require('./bower.json'),
             directory: './bower_components',
