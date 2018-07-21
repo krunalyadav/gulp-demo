@@ -12,6 +12,7 @@ module.exports = function() {
         index: client + 'index.html',
         build: './build/',
         css: temp + 'styles.css',
+        htmltemplates: clientApp + '**/*.html',
         js: [
             clientApp + '**/*.module.js',
             clientApp + '**/*.js',
@@ -28,6 +29,15 @@ module.exports = function() {
         server: server,
 
         browserReloadDelay: 1000,
+
+        templateCache: {
+            file: 'templates.js',
+            options: {
+                module: 'app.core',
+                standAlone: false,
+                root: 'app/'
+            }
+        },
 
         defaultPort: 7203,
         nodeServer: './src/server/app.js'
