@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "browser-sync": "^1.8.2",
-    "del": "^3.0.0",
+    "del": "^1.1.1",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.2.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -42,6 +42,7 @@
     "gulp-plumber": "^1.2.0",
     "gulp-print": "^5.0.0",
     "gulp-task-listing": "^1.1.0",
+    "gulp-useref": "^1.1.0",
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",

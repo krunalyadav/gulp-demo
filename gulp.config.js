@@ -9,6 +9,7 @@ module.exports = function() {
         temp: temp,
         less: client + '/styles/styles.less',
         client: client,
+        html: clientApp + '**/*.html',
         index: client + 'index.html',
         build: './build/',
         css: temp + 'styles.css',
