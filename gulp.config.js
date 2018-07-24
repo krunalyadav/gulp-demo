@@ -27,6 +27,11 @@ module.exports = function() {
             ignorePath: '../..'
         },
 
+        optimized: {
+            app: 'app',
+            lib: 'lib'
+        },
+
         server: server,
 
         browserReloadDelay: 1000,
