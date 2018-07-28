@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var args = require('yargs').argv;
 var browserSync = require('browser-sync');
 var $ = require('gulp-load-plugins')({ lazy: true });
 var config = require('./gulp.config')();
@@ -139,9 +140,42 @@ gulp.task('optimize', ['inject', 'fonts', 'images'], function() {
         .pipe($.ngAnnotate())
         .pipe($.uglify())
         .pipe(jsAppFilter.restore())
+        .pipe($.rev())
         .pipe(assets.restore())
         .pipe($.useref())
+        .pipe($.revReplace())
+        .pipe(gulp.dest(config.build))
+        .pipe($.rev.manifest())
         .pipe(gulp.dest(config.build));
+});
+
+/**
+ * Bump the version
+ * --type=pre will bump the prerelease version *.*.*-x
+ * --type=patch or no flag will bump the patch version *.*.x
+ * --type=minor will bump the minor version *.x.*
+ * --type=major will bump the major version x.*.*
+ * --version=1.2.3 will bump to a specific version and ignore other flags
+ */
+gulp.task('bump', function() {
+    var msg = 'Bumping versions';
+    var type = args.type;
+    var version = args.version;
+    var options = {};
+
+    if (version) {
+        options.version = version;
+        msg += ' to ' + version;
+    } else {
+        options.type = type;
+        msg += ' for a ' + type;
+    }
+    log(msg);
+    return gulp
+        .src(config.packages)
+        .pipe($.bump(options))
+        .pipe($.print())
+        .pipe(gulp.dest(config.root));
 });
 
 gulp.task('serve-build', ['optimize'], function() {

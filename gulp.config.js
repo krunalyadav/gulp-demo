@@ -3,6 +3,7 @@ module.exports = function() {
     var clientApp = client + 'app/';
     var temp = './.temp/';
     var server = './src/server/';
+    var root = './';
 
     var config = {
         alljs: ['./src/**/*.js', './*.js'],
@@ -26,11 +27,13 @@ module.exports = function() {
             directory: './bower_components',
             ignorePath: '../..'
         },
-
+        root: root,
         optimized: {
             app: 'app',
             lib: 'lib'
         },
+
+        packages: ['./package.json', './bower.json'],
 
         server: server,
 
